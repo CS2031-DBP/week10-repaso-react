@@ -28,8 +28,8 @@ function Login() {
       );
 
       console.log(res.data);
-
       setToken(res.data.token);
+      
       navigate('/profile')
     } catch (error: unknown) {
       console.error(error);
