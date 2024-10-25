@@ -27,9 +27,12 @@ function Profile() {
   }, [token, navigate]);
 
   return (
-    <>
-      <h1>{message}</h1>
-    </>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <h1 className="text-4xl font-bold text-gray-800 mb-8">{message}</h1>
+      <div className="mt-30 h-96 flex items-center justify-center animate-spin">
+        <p className="text-xl text-blue-500 animate-move">bounce</p>
+      </div>
+    </div>
   );
 }
 
